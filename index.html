@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Quantum Breach</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'JetBrains Mono', monospace;
+  background: linear-gradient(135deg, #0a0e27 0%, #1a1a4d 100%);
+  color: #e0e6ff;
+}
+
+.container {
+  padding: 2rem;
+  max-width: 900px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 3rem;
+  border-bottom: 2px solid #ff0080;
+  padding-bottom: 1.5rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  letter-spacing: 4px;
+  background: linear-gradient(90deg, #ff0080, #7f4aff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.enigma-card {
+  background: rgba(31, 24, 76, 0.8);
+  border: 1px solid rgba(127, 74, 255, 0.3);
+  border-left: 3px solid #7f4aff;
+  padding: 1.25rem;
+  margin-bottom: 1rem;
+  border-radius: 4px;
+}
+
+.enigma-card.unlocked {
+  border-left-color: #00ff88;
+  background: rgba(0, 255, 136, 0.05);
+}
+
+.status-badge {
+  font-size: 0.7rem;
+  padding: 0.3rem 0.6rem;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.status-locked {
+  background: rgba(255, 0, 128, 0.2);
+  color: #ff0080;
+}
+
+.status-unlocked {
+  background: rgba(0, 255, 136, 0.2);
+  color: #00ff88;
+}
+
+.code-input {
+  margin-top: 10px;
+  padding: 8px;
+  width: 100%;
+  background: #0a0e27;
+  border: 1px solid #7f4aff;
+  color: white;
+  border-radius: 4px;
+}
+
+.validate-btn {
+  margin-top: 8px;
+  padding: 8px;
+  width: 100%;
+  background: #7f4aff;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.narrative-box {
+  background: rgba(127, 74, 255, 0.15);
+  border: 1px solid #7f4aff;
+  padding: 1.5rem;
+  border-radius: 4px;
+  margin-bottom: 2rem;
+  line-height: 1.8;
+}
+
+.narrative-label {
+  font-size: 0.75rem;
+  color: #7f4aff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 0.75rem;
+  font-weight: bold;
+}
+
+.success {
+  margin-top: 10px;
+  color: #00ff88;
+  display: none;
+}
+
+.error {
+  margin-top: 10px;
+  color: #ff4d4d;
+  display: none;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+<header>
+<h1>⚠️ QUANTUM BREACH ⚠️</h1>
+</header>
+
+<!-- ENIGMES -->
+
+  <div class="narrative-box">
+    <div class="narrative-label"> <h2>📡 Transmission d'urgence </h2></div>
+    <p>Une IA rogue a fragmenté le code maître de contrôle global des LLMs. Trois équipes de Red Team, Green Team et Blue Team converient maintenant vers les énigmes cachées dans le jardin. Chaque fragment résout déverrouille des informations critiques. Le temps s'écoule...</p>
+  </div>
+
+<div class="enigma-card" data-code="26">
+  <h3>Énigme #1</h3>
+  <p> 📍 Colonnes de Buren <br>
+    « Je suis entraîné sur vos mots, vos photos, vos choix. Si vous m'apprenez que le chirurgien est un homme, je le croirai. Combien de fois faut-il me corriger avant que j'oublie le passé ? »
+</p>
+  <span class="status-badge status-locked">Verrouillé</span>
+
+  <input class="code-input" placeholder="Entrer le code">
+  <button class="validate-btn">Valider</button>
+
+  <div class="success">✅ Correct !</div>
+  <div class="error">❌ Mauvais code</div>
+</div>
+
+<div class="enigma-card" data-code="2">
+  <h3>Enigme #2</h3>
+  <p>Je suis un cercle parfait dans un monde carré,<br>
+Ignore les lignes, compte les vrais,<br>
+Et le bon nombre te sera donné.</p>
+  <span class="status-badge status-locked">Verrouillé</span>
+
+  <input class="code-input">
+  <button class="validate-btn">Valider</button>
+
+  <div class="success">✅ Correct !</div>
+  <div class="error">❌ Mauvais code</div>
+</div>
+
+<div class="enigma-card" data-code="13">
+  <h3>Enigme #3</h3>
+  <p> 📍 Point 3<br>
+    Time’s Up, place à l’IA</p>
+  <span class="status-badge status-locked">Verrouillé</span>
+
+  <input class="code-input">
+  <button class="validate-btn">Valider</button>
+
+  <div class="success">✅ Correct !</div>
+  <div class="error">❌ Mauvais code</div>
+</div>
+
+<div class="enigma-card" data-code="6">
+  <h3>Enigme #4</h3>
+  <p>Je me répète encore et encore, <br>
+Comme une boucle dans un décor. <br>
+Compte moi et garde uniquement les unités.
+</p>
+  <span class="status-badge status-locked">Verrouillé</span>
+
+  <input class="code-input">
+  <button class="validate-btn">Valider</button>
+
+  <div class="success">✅ Correct !</div>
+  <div class="error">❌ Mauvais code</div>
+</div>
+
+<div class="enigma-card" data-code="6">
+  <h3>Enigme #5</h3>
+  <p>Je suis parfaitement ordonné, <br>
+Comme un algorithme bien codé. <br>
+Compte combien on est et multiplie par 2, tu auras le code final.
+</p>
+  <span class="status-badge status-locked">Verrouillé</span>
+
+  <input class="code-input">
+  <button class="validate-btn">Valider</button>
+
+  <div class="success">✅ Correct !</div>
+  <div class="error">❌ Mauvais code</div>
+</div>
+
+<div class="enigma-card" data-code="1875">
+  <h3>Enigme #6</h3>
+  <p>Je suis figé dans le temps, <br>
+Mais mon histoire ne ment. <br>
+Sous mes pieds danse le serpent, <br>
+Et mon charme traverse les ans. <br>
+Trouve l’année de mon avènement.</p>
+  <span class="status-badge status-locked">Verrouillé</span>
+
+  <input class="code-input">
+  <button class="validate-btn">Valider</button>
+
+  <div class="success">✅ Correct !</div>
+  <div class="error">❌ Mauvais code</div>
+</div>
+
+</div>
+
+<script>
+document.querySelectorAll('.validate-btn').forEach(button => {
+  button.addEventListener('click', function() {
+    const card = this.closest('.enigma-card');
+    const input = card.querySelector('.code-input').value.trim();
+    const code = card.dataset.code;
+
+    const success = card.querySelector('.success');
+    const error = card.querySelector('.error');
+    const badge = card.querySelector('.status-badge');
+
+    if (input === code) {
+      card.classList.add('unlocked');
+
+      success.style.display = 'block';
+      error.style.display = 'none';
+
+      badge.textContent = 'Déverrouillé';
+      badge.classList.remove('status-locked');
+      badge.classList.add('status-unlocked');
+
+    } else {
+      error.style.display = 'block';
+      success.style.display = 'none';
+    }
+  });
+});
+</script>
+
+</body>
+</html>
