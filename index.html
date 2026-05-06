@@ -120,6 +120,40 @@ h1 {
   color: #ff4d4d;
   display: none;
 }
+
+@media (max-width: 600px) {
+
+  .container {
+    padding: 1rem;
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .enigma-card {
+    padding: 1rem;
+    font-size: 0.95rem;
+  }
+
+  .code-input {
+    font-size: 16px; /* évite zoom iPhone */
+    padding: 12px;
+  }
+
+  .validate-btn {
+    padding: 12px;
+    font-size: 16px;
+  }
+
+  .narrative-box {
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+
+}
 </style>
 </head>
 
@@ -144,7 +178,7 @@ h1 {
 </p>
   <span class="status-badge status-locked">Verrouillé</span>
 
-  <input class="code-input" placeholder="Entrer le code">
+  <input class="code-input" inputmode="numeric" pattern="[0-9]*" placeholder="Entrer le code">
   <button class="validate-btn">Valider</button>
 
   <div class="success">✅ Correct !</div>
@@ -158,7 +192,7 @@ Ignore les lignes, compte les vrais,<br>
 Et le bon nombre te sera donné.</p>
   <span class="status-badge status-locked">Verrouillé</span>
 
-  <input class="code-input">
+  <input class="code-input" inputmode="numeric" pattern="[0-9]*" >
   <button class="validate-btn">Valider</button>
 
   <div class="success">✅ Correct !</div>
@@ -171,7 +205,7 @@ Et le bon nombre te sera donné.</p>
     Time’s Up, place à l’IA</p>
   <span class="status-badge status-locked">Verrouillé</span>
 
-  <input class="code-input">
+  <input class="code-input" inputmode="numeric" pattern="[0-9]*" >
   <button class="validate-btn">Valider</button>
 
   <div class="success">✅ Correct !</div>
@@ -186,7 +220,7 @@ Compte moi et garde uniquement les unités.
 </p>
   <span class="status-badge status-locked">Verrouillé</span>
 
-  <input class="code-input">
+  <input class="code-input" inputmode="numeric" pattern="[0-9]*">
   <button class="validate-btn">Valider</button>
 
   <div class="success">✅ Correct !</div>
@@ -201,7 +235,7 @@ Compte combien on est et multiplie par 2, tu auras le code final.
 </p>
   <span class="status-badge status-locked">Verrouillé</span>
 
-  <input class="code-input">
+  <input class="code-input" inputmode="numeric" pattern="[0-9]*" >
   <button class="validate-btn">Valider</button>
 
   <div class="success">✅ Correct !</div>
@@ -217,7 +251,7 @@ Et mon charme traverse les ans. <br>
 Trouve l’année de mon avènement.</p>
   <span class="status-badge status-locked">Verrouillé</span>
 
-  <input class="code-input">
+  <input class="code-input" inputmode="numeric" pattern="[0-9]*" >
   <button class="validate-btn">Valider</button>
 
   <div class="success">✅ Correct !</div>
